@@ -1,0 +1,14 @@
+class cars():
+    def gas(self):
+        print("10I=L")
+    def bhp(self):
+        print(111)
+
+class brand(cars):
+    def names(self, name):
+        self.name = name
+        return self.name  # <-- ADD THIS
+
+c1 = brand()
+print(c1.names("bmv"))  # Now it'll print "bmv"
+print(c1.gas()) 
